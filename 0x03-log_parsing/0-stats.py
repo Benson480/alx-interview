@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script to get status from a request"""
+"""Script to get stats from a request"""
 
 import sys
 
@@ -16,7 +16,7 @@ try:
                 print("{}: {}".format(key, codes[key]))
             count = 1
         else:
-            count +=1
+            count += 1
 
         ln = ln.split()
 
@@ -43,4 +43,3 @@ except KeyboardInterrupt:
     for key in sorted(codes):
         print("{}: {}".format(key, codes[key]))
     raise
-
